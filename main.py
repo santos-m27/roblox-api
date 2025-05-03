@@ -23,7 +23,7 @@ def get_followings(user_id):
     cursor = request.args.get('cursor', default=None, type=str)  # Default to None if not provided
     
     # Build the URL with the query parameters
-    url = f"https://friends.roblox.com/v1/users/{user_id}/followings?limit={limit}"
+    url = f"https://friends.roproxy.com/v1/users/{user_id}/followings?limit={limit}"
     if cursor:
         url += f"&cursor={cursor}"
 
